@@ -1,0 +1,112 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #3a3d40, #181818);
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2f33;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+input[type="range"] {
+    width: 80%;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, #3cba92, #50c9c3);
+    border-radius: 15px;
+    outline: none;
+    margin: 25px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #00adb5;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #00adb5;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.4rem;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+audio {
+    margin-top: 20px;
+    width: 100%;
+    border: 3px solid #3cba92;
+    border-radius: 10px;
+    background-color: #181818;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="range"] {
+        height: 20px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        width: 25px;
+        height: 25px;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    audio {
+        width: 100%;
+    }
+}
