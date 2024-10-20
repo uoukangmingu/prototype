@@ -9,21 +9,18 @@
 <body>
     <div class="container">
         <h1>음량 조절</h1>
-        <input type="range" id="volume-slider" min="0" max="100" value="50">
+        <input type="range" id="volume-slider" min="0" max="100" value="0">
         <p>현재 음량: <span id="volume-value">50</span>%</p>
-        
-        <!-- 곡 선택을 위한 드롭다운 메뉴 -->
-        <select id="song-selector">
-            <option value="0">노래 1 (Sample Audio 1)</option>
-            <option value="1">노래 2 (Sample Audio 2)</option>
-        </select>
 
-        <!-- 재생 버튼 -->
-        <button id="play-button">재생</button>
+        <!-- First audio player -->
+        <audio id="audio-player-1" controls>
+            <source src="sample-audio.mp3" type="audio/mp3">
+            브라우저가 오디오 태그를 지원하지 않습니다.
+        </audio>
 
-        <!-- 오디오 플레이어 -->
-        <audio id="audio-player" controls>
-            <source id="audio-source" src="sample-audio.mp3" type="audio/mp3">
+        <!-- Second audio player -->
+        <audio id="audio-player-2" controls>
+            <source src="sample-audio2.mp3" type="audio/mp3">
             브라우저가 오디오 태그를 지원하지 않습니다.
         </audio>
     </div>
